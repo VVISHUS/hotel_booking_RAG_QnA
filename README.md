@@ -54,9 +54,10 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
 {
   "req_id": "123",
   "query": "What is the average revenue by market segment?"
-  "descriptive": True
+  "descriptive": true
 }
 ```
+```json
 {
   "response": {
     "result": "...",
@@ -64,7 +65,7 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
     "insights": "..."
   }
 }
-
+```
 ```json
 ### `POST /analytics`
 {
@@ -81,7 +82,6 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
       "description": "Monthly revenue patterns showing hotel earnings...",
       "key_metrics": "Total revenue, bookings, ADR",
       "data": {...},
-      "plot_image_base64": "..."  // Optional: Embedded plot
     }
   ]
 }
