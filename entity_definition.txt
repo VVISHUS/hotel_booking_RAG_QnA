@@ -1,0 +1,127 @@
+# Hotel Booking Analytics Definitions
+
+## Cancellation Rate Analytics
+- Table Name: `overall_cancellation_rate`
+- Description: Overall percentage of bookings that were canceled across the entire dataset. This metric provides a high-level view of cancellation behavior.
+- Sample Questions: "What is the overall cancellation rate?", "What percentage of bookings get canceled?", "How many bookings are typically canceled?"
+- Key Metrics: Cancellation rate as a percentage
+
+## Monthly Cancellation Analytics
+- Table Name: `monthly_cancellation_rates`
+- Description: Breakdown of cancellation rates by month, showing seasonal patterns in booking cancellations. This helps identify months with higher or lower cancellation tendencies.
+- Sample Questions: "Which month has the highest cancellation rate?", "How do cancellations vary by month?", "Is there a seasonal pattern to cancellations?"
+- Key Metrics: Cancellation rate per month as a percentage
+
+## Yearly Cancellation Rates
+- Table Name: `yearly_cancellation_rates`
+- Description: Breakdown of cancellation rates by year, showing yearly booking cancellations. This helps identify year with higher or lower cancellations overall.
+- Sample Questions: "Which year has the highest cancellation rate?", "How do cancellations vary by year?"
+- Key Metrics: Cancellation rate per year as a percentage
+
+## Lead Time Analysis
+- Table Name: `lead_time_by_cancellation`
+- Description: Comparison of booking lead times (days in advance) between canceled and non-canceled bookings. This reveals if early or late bookings are more likely to be canceled.
+- Sample Questions: "Do early bookings get canceled more often?", "What's the average lead time for canceled vs. non-canceled bookings?", "Is there a relationship between how far in advance people book and cancellation?"
+- Key Metrics: Mean, median, min, max lead times by cancellation status
+
+## Lead Time Distribution
+- Table Name: `lead_time_percentiles`
+- Description: Statistical distribution of booking lead times across different percentiles, showing how far in advance most customers book their stays.
+- Sample Questions: "How far in advance do most people book?", "What's the typical booking lead time?", "What percentage of bookings are made less than a week in advance?"
+- Key Metrics: Percentiles (10th, 25th, 50th, 75th, 90th, 95th, 99th) of lead times
+
+## Revenue Trends
+- Table Name: `monthly_revenue_trend`
+- Description: Monthly revenue patterns showing how hotel earnings fluctuate throughout the year. Excludes canceled bookings to reflect actual realized revenue.
+- Sample Questions: "What was the total revenue for July 2017?", "Which month generated the most revenue?", "How does revenue change throughout the year?"
+- Key Metrics: Total revenue, average revenue per booking, booking count by month and year
+
+## Geographical Distribution
+- Table Name: `country_distribution`
+- Description: Analysis of guest countries of origin, showing which markets contribute the most bookings and their respective cancellation behaviors.
+- Sample Questions: "Which countries do most guests come from?", "What's the geographical distribution of bookings?", "Which country has the highest cancellation rate?"
+- Key Metrics: Booking count, percentage of total bookings, cancellation rate by country
+
+## Stay Duration Statistics
+- Table Name: `stay_duration_stats`
+- Description: Analysis of how long guests typically stay, comparing patterns between canceled and non-canceled bookings.
+- Sample Questions: "What's the average length of stay?", "Do longer bookings get canceled more often?", "What's the typical duration of a hotel stay?"
+- Key Metrics: Mean, median, min, max stay duration by cancellation status
+
+## Stay Duration Frequency
+- Table Name: `stay_duration_frequency`
+- Description: Distribution of stay durations showing how many guests stay for specific numbers of nights. Helps identify the most common booking durations.
+- Sample Questions: "What's the most common length of stay?", "How many people stay for just one night?", "What percentage of guests stay for a week or longer?"
+- Key Metrics: Frequency count for each stay duration (number of nights)
+
+## Room Type Distribution
+- Table Name: `room_type_distribution`
+- Description: Analysis of which room types are most frequently reserved and assigned, highlighting preferences and availability patterns.
+- Sample Questions: "What's the most popular room type?", "Which room type is reserved most often?", "Are guests typically assigned the room type they reserved?"
+- Key Metrics: Reserved count, assigned count, percentage of total bookings by room type
+
+## Room Change Rate
+- Table Name: `room_change_rate`
+- Description: Percentage of bookings where the assigned room type differs from the reserved room type, indicating room type availability issues.
+- Sample Questions: "How often do guests get a different room than they booked?", "What percentage of guests receive room upgrades or downgrades?", "What's the room change rate?"
+- Key Metrics: Room change rate as a percentage
+
+## Distribution Channel Analysis
+- Table Name: `distribution_channel_analysis`
+- Description: Breakdown of booking sources (online travel agencies, direct, corporate, etc.) and their impact on cancellation behavior.
+- Sample Questions: "Which booking channel is most popular?", "Do bookings from travel agencies cancel more often?", "Which distribution channel brings the most business?"
+- Key Metrics: Booking count, percentage of total, cancellation rate by distribution channel
+
+## Market Segment Analysis
+- Table Name: `market_segment_analysis`
+- Description: Analysis of market segments (leisure, business, groups, etc.) showing the composition of hotel bookings by customer type.
+- Sample Questions: "What percentage of bookings are from the corporate segment?", "Which market segment is most common?", "How many bookings come from online travel agencies?"
+- Key Metrics: Booking count, percentage of total by market segment
+
+## Price Statistics
+- Table Name: `price_statistics`
+- Description: Overall statistics on room prices (ADR - Average Daily Rate) across all bookings, showing the price distribution.
+- Sample Questions: "What's the average price of a hotel booking?", "What's the typical room rate?", "How much does a room typically cost?"
+- Key Metrics: Mean, median, min, max, standard deviation of ADR
+
+## Price by Room Type
+- Table Name: `price_by_room_type`
+- Description: Analysis of how room prices vary by room type, showing premium levels for different accommodations.
+- Sample Questions: "Which room type is most expensive?", "What's the price difference between room types?", "How much does a deluxe room cost compared to a standard room?"
+- Key Metrics: Mean, median, min, max price by room type
+
+## Price by Market Segment
+- Table Name: `price_by_market_segment`
+- Description: Comparison of room prices across different market segments, revealing pricing strategies for different customer groups.
+- Sample Questions: "Do corporate bookings pay more than leisure?", "Which market segment pays the highest rates?", "Is there a price difference between direct bookings and OTA bookings?"
+- Key Metrics: Mean, median, min, max price by market segment
+
+## Monthly Price Trend
+- Table Name: `monthly_price_trend`
+- Description: Monthly patterns in room pricing, showing how rates fluctuate throughout the year due to seasonality.
+- Sample Questions: "Which month has the highest room rates?", "How do prices vary throughout the year?", "When is the cheapest time to book a room?"
+- Key Metrics: Average price by month
+
+## Seasonal Booking Patterns
+- Table Name: `seasonal_booking_patterns`
+- Description: Monthly distribution of bookings showing high and low seasons, including both total and confirmed (non-canceled) bookings.
+- Sample Questions: "What's the busiest month for the hotel?", "When is high season?", "Which month has the most bookings?"
+- Key Metrics: Total bookings, confirmed bookings, cancellation count, cancellation rate by month
+
+## Deposit Type Analysis
+- Table Name: `deposit_type_analysis`
+- Description: Analysis of different deposit policies (no deposit, non-refundable, refundable) and their impact on cancellation behavior and revenue.
+- Sample Questions: "What percentage of bookings have no deposit?", "Do non-refundable bookings have lower cancellation rates?", "Which deposit type generates the most revenue?"
+- Key Metrics: Booking count, percentage, cancellation rate, revenue statistics by deposit type
+
+## Repeat Guest Analysis
+- Table Name: `repeat_guest_analysis`
+- Description: Comparison between first-time and repeat guests, showing differences in booking behavior and loyalty patterns.
+- Sample Questions: "What percentage of guests are returning customers?", "Do repeat guests cancel less often?", "How many bookings come from repeat guests?"
+- Key Metrics: Booking count, percentage, cancellation rate for new vs. repeat guests
+
+## High Cancellation Factors
+- Table Name: `high_cancellation_factors`
+- Description: Comprehensive analysis of factors associated with higher cancellation rates, helping identify the strongest predictors of cancellation.
+- Sample Questions: "What factors are associated with high cancellation rates?", "Which customer segments cancel the most?", "What booking characteristics predict cancellations?"
+- Key Metrics: Cancellation rate, booking count by various factors (hotel, meal, market segment, distribution channel, deposit type, customer type, reserved room type)
