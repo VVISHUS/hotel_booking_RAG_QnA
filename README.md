@@ -66,8 +66,9 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
   }
 }
 ```
-```json
 ### `POST /analytics`
+
+```json
 {
   "query": "Show me revenue trends over time",
   "top_k": 2
