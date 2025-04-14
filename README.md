@@ -114,12 +114,13 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
 ├── requirements.txt          # All dependencies
 ```
 
-# 📦 Installation
+## 📦 Installation
 git clone https://github.com/your-username/hotel-booking-rag.git
 cd hotel-booking-rag
 conda create -n rag_env python=3.10
 conda activate rag_env
 pip install -r requirements.txt
+
 ## ⚙️ Environment Setup
 
 Before running the application, create a `.env` file in the root directory with the following variables:
@@ -131,7 +132,7 @@ data_db=hotel_bookings.db
 data_db_table=hotel_booking_data
 ```
 
-# 📍 TODO / Improvements
+## 📍 TODO / Improvements
 ### ⏳ To make this for more generalized dataset and use more generalized data analytics
 
 ### ⏳ Plot and send visualizations for /analytics
