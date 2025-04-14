@@ -115,9 +115,9 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
 ```
 
 ## 📦 Installation
-git clone https://github.com/your-username/hotel-booking-rag.git
+gh repo clone VVISHUS/hotel_booking_RAG_QnA
 cd hotel-booking-rag
-conda create -n rag_env python=3.10
+conda create -n rag_env python=3.10.16
 conda activate rag_env
 pip install -r requirements.txt
 
