@@ -53,7 +53,7 @@ except Exception as e:
     print(f"[ERROR] BookingAnalytics init failed: {e}")
 
 try:
-    llm = LLM(use_custom_llm=False)
+    llm = LLM(use_custom_llm=False) #Custom_llm is not tested yet due to resource restriction, It will be updated soon after testing on Colab/Kaggle. 
     health_status["llm"] = True
 except Exception as e:
     print(f"[ERROR] LLM init failed: {e}")
