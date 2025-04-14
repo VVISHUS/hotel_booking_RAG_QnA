@@ -17,6 +17,7 @@ This project is an end-to-end **Retrieval-Augmented Generation (RAG)** system de
 
 ---
 
+
 ## 🛠️ Architecture Overview
 
                      ┌────────────────────┐
@@ -100,7 +101,7 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
 🔍 **Based on table context + user query**
 
 ## 📁 Project Structure
-
+```
 .
 ├── API.py                    # FastAPI application
 ├── utils/
@@ -111,6 +112,7 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
 ├── preprocessed_data.csv     # Final cleaned CSV
 ├── analytics_description.txt # Text for vector indexing
 ├── requirements.txt          # All dependencies
+```
 
 # 📦 Installation
 git clone https://github.com/your-username/hotel-booking-rag.git
@@ -118,13 +120,27 @@ cd hotel-booking-rag
 conda create -n rag_env python=3.10
 conda activate rag_env
 pip install -r requirements.txt
+## ⚙️ Environment Setup
 
+Before running the application, create a `.env` file in the root directory with the following variables:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+chroma_db_collection=your_chroma_collection_name
+data_db=hotel_bookings.db
+data_db_table=hotel_booking_data
 
 # 📍 TODO / Improvements
-### ✅ Plot visualizations for /analytics
+### ⏳ To make this for more generalized dataset and use more generalized data analytics
+
+### ⏳ Plot and send visualizations for /analytics
 
 ### ⏳ Add support for CSV upload via API
 
 ### ⏳ Streamed response with chunked LLM answers
+
+### ⏳ Srore databased in S3 and fetch from there
+
+### ⏳ Real time Data support
 
 ### ⏳ UI integration (React/Vue)
