@@ -57,6 +57,8 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
   "descriptive": true
 }
 ```
+**Response:**
+
 ```json
 {
   "response": {
@@ -67,13 +69,15 @@ Returns system status only if all major services (SQLite, ChromaDB, LLM) are ini
 }
 ```
 ### `POST /analytics`
-
+**Request:**
 ```json
 {
   "query": "Show me revenue trends over time",
   "top_k": 2
 }
 ```
+**Response:**
+
 ```json
 {
   "analytics": [
