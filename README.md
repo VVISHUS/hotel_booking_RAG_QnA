@@ -133,6 +133,7 @@ data_db_table=hotel_booking_data
 ```
 
 ## 📍 TODO / Improvements
+
 ### ⏳ To make this for more generalized dataset and use more generalized data analytics
 
 ### ⏳ Plot and send visualizations for /analytics
