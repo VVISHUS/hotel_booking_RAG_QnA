@@ -129,6 +129,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 chroma_db_collection=your_chroma_collection_name
 data_db=hotel_bookings.db
 data_db_table=hotel_booking_data
+```
 
 # 📍 TODO / Improvements
 ### ⏳ To make this for more generalized dataset and use more generalized data analytics
