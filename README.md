@@ -134,6 +134,8 @@ data_db_table=hotel_booking_data
 
 ## 📍 TODO / Improvements
 
+### ⏳ Smooth custom_llm Integratiom, It will be updated soon after testing on Colab/Kaggle. 
+
 ### ⏳ To make this for more generalized dataset and use more generalized data analytics
 
 ### ⏳ Plot and send visualizations for /analytics
